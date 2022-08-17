@@ -44,10 +44,122 @@
   </div>
   <span class="block bg-split-green-blue h-0.5 w-full"></span>
   
-  
+  <div class="bg-darkGary">
+  <div class="container">
+    <ul class=" flex justify-between text-white pt-8 pb-4 relative
+    before:absolute before:top-8 before:left-8 before:-translate-y-1/2 before:bg-white before:h-0.5 before:w-[calc(50%-32px)] before:z-0
+    after:absolute after:top-8 after:right-8 after:-translate-y-1/2 after:bg-white after:h-0.5 after:w-[calc(50%-32px)] after:z-0
+    ">
+      <li class="relative text-primary pt-4">
+        <span class="absolute left-1/2 top-0 -translate-y-1/2 -translate-x-1/2 z-20
+        rounded-full flex justify-center items-center border border-white text-xs bg-primary-green text-white w-5 h-5  font-Azeret">
+        1
+        </span>
+        課程報名
+      </li>
+      <li class="relative pt-4">
+        <span class="absolute left-1/2 top-0 -translate-y-1/2 -translate-x-1/2 z-20
+        rounded-full flex justify-center items-center border border-white text-xs bg-black w-5 h-5  font-Azeret">
+        2
+      </span>
+        信用卡付款
+      </li>
+      <li class="relative pt-4">
+        <span class="absolute left-1/2 top-0 -translate-y-1/2 -translate-x-1/2 z-20
+        rounded-full flex justify-center items-center border border-white text-xs bg-black w-5 h-5  font-Azeret">
+        3
+      </span>
+        付款成功
+      </li>
+    </ul>
+  </div>
+</div> 
+<div class="bg-black pb-[144px]">
+  <div class="container grid grid-cols-12 space-y-11 xl:relative">
+    <div class="bg-darkGary col-span-12 xl:col-span-4 relative xl:left-[43px] xl:h-1/2 xl:top-1/2 xl:-translate-y-1/2 z-10">
+      <div class="relative p-6 xl:py-12 xl:px-8 flex flex-col justify-center items-center">
+        <img src="./assets/images/teacher01.jpg" alt="teacher picture" class="rounded-full w-25 h-25 ring ring-primary-green mb-4 xl:mb-6">
+        <h2 class="text-white font-bold xl:text-lg pb-2 xl:pb-1">2022 Python 全攻略｜從入門到實務</h2>
+        <span class="text-primary-green pb-2">前端語言</span>
+        <p class="text-white">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+      </div>
+      <div class="right-triangle hidden xl:block absolute top-1/2 right-[-12px] -translate-y-1/2"></div>
+      <div class="bottom-triangle xl:hidden absolute bottom-[-12px] left-1/2 -translate-x-1/2 "></div>
+    </div>
+    <div class="bg-secondary-dark col-span-12 xl:col-span-8 xl:relative right-[43px] top-0 z-0 text-white">
+      <h2 class="text-2xl font-bold text-center py-6 xl:py-12">課程報名</h2>
+      <div class="pb-6 xl:pb-12 xl:pl-[114px] xl:pr-8">
+        <h3 class="text-lg font-bold text-center xl:text-left pb-4 xl:pb-1 5">選擇付款方式</h3>
+      <div class="flex flex-col xl:flex-row space-y-2 xl:space-y-0 xl:space-x-4 mb-8">
+        <div class="flex space-x-2 xl:space-x-4">
+          <button class="btn p-4 xl:px-8 rounded-lg ring-1 ring-white hover:ring-primary-green text-white
+           hover:text-primary-green w-1/2 xl:w-auto">選擇付款方式</button>
+          <button class="btn p-4 xl:px-8 rounded-lg ring-1 ring-white hover:ring-primary-green text-white
+           hover:text-primary-green w-1/2 xl:w-auto">超商繳款</button>
+        </div>
+        <div class="flex space-x-2 xl:space-x-4">
+          <button class="btn p-4 xl:px-8 rounded-lg ring-1 ring-white hover:ring-primary-green text-white
+           hover:text-primary-green w-1/2 xl:w-auto">ATM轉帳</button>
+          <button class="btn p-4 xl:px-8 rounded-lg ring-1 ring-white hover:ring-primary-green text-white
+           hover:text-primary-green w-1/2 xl:w-auto">12期分期付款</button>
+        </div>
+      </div>
+      <h2 class="text-2xl font-bold text-center xl:text-left pb-4 xl:pb-6">訂單資訊</h2>
+        <div class="flex flex-col text-secondary-dark-light">
+          <div class="flex flex-col xl:flex-row">
+            <div class="from-group xl:w-1/2 pb-4 xl:pb-6">
+              <label class="block pb-2 xl:pb-1.5" for="name">姓名</label>
+              <input class="py-2 px-4  bg-secondary-dark w-full xl:w-9/10 rounded border border-white focus:ring
+               focus:ring-white" id="name" placeholder="請輸入姓名" type="text">
+            </div>
+            <div class="from-group xl:w-1/2 pb-4 xl:pb-6">
+              <label class="xl:pl-9 block pb-2 xl:pb-1.5" for="tel">電話</label>
+              <div class="flex justify-end">
+                <input class="py-2 px-4 bg-secondary-dark w-full xl:w-9/10 rounded border border-white focus:ring
+                 focus:ring-white" id="tel" placeholder="請輸入電話號碼" type="tel">
+              </div>
+            </div>
+          </div>
+          <div class="from-group pb-4 xl:pb-6 ">
+            <label class="block pb-2 xl:pb-1.5" for="email" class="block">Email</label>
+            <input class="py-2 px-4 bg-secondary-dark w-full rounded border border-white focus:ring focus:ring-white"
+             id="email" placeholder="請輸入Email" type="email">
+          </div>
+          <div class="flex flex-col xl:flex-row xl:justify-between">
+            <div class="from-group xl:w-1/2 pb-4 xl:pb-6">
+              <label class="block pb-2 xl:pb-1.5" for="class">課程</label>
+              <select class="bg-secondary-dark w-full xl:w-9/10 rounded border border-white focus:ring focus:ring-white" 
+              name="class" id="class" class="text-white">
+                <option value="10堂50分鐘" selected>10堂50分鐘</option>
+                <option value="5堂50分鐘">5堂50分鐘</option>
+                <option value="3堂50分鐘">3堂50分鐘</option>
+                <option value="1堂50分鐘">1堂50分鐘</option>
+              </select>
+            </div>
+            <div class="from-group xl:w-1/2 pb-4 xl:pb-6">
+              <label class="xl:pl-9 block pb-2 xl:pb-1.5" for="chooseDate">想預約的日期</label>
+              <div class="flex justify-end">
+                <input class="py-2 px-4 bg-secondary-dark w-full  xl:w-9/10 rounded border border-white focus:ring focus:ring-white" 
+                id="chooseDate" placeholder="想預約的日期" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="from-group">
+            <label class="block pb-2 xl:pb-1.5" for="text" class="block">上課地點</label>
+            <input class="py-2 px-4 bg-secondary-dark w-full rounded border border-white focus:ring focus:ring-white" 
+            id="text" placeholder="請輸入上課地點" type="email">
+          </div>
+          <div class="flex flex-col xl:flex-row xl:justify-between space-y-6 xl:space-y-0 pt-6">
+            <span class="text-white text-lg font-bold font-Azeret">NT$1600</span>
+            <button class="btn rounded-lg py-2 px-6 xl:px-12 text-white bg-blur-green-blue">前往結帳</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
  
   
-  <div class="bg-darkGary-middle py-4 lg:py-6">
+  <div class="bg-darkGary-middle py-4 lg:py-6 stickyFooter">
     <p class="text-secondary text-xs text-center md:text-base">Coding Home © 2022 All Rights Reserved</p>
   </div>
   <script src="./assets/js/vendors.js"></script>
