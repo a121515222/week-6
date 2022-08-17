@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./app/**/*.{html,ejs}", "./node_modules/flowbite/**/*.js" ],
   theme: {
@@ -38,8 +39,8 @@ module.exports = {
       '7xl':['72px', {
         lineHeight: '108px',
       }],
-      '8xl':['14px', {
-        lineHeight: '21px',
+      '8xl':['80px', {
+        lineHeight: '80px',
       }],
       '9xl':['128px', {
         lineHeight: '192px',
@@ -88,6 +89,8 @@ module.exports = {
       width: {
         '50px': '50px',
         '25' : '100px',
+        '9/20' : '45%',
+        '9/10' : '90%',
       },
       padding: {
         '6.5': '26px',
@@ -96,7 +99,8 @@ module.exports = {
         '21': '84px',
       },
       fontFamily: {
-        'google-material': ['Material Icons'],
+        'google-material': ['"Material Icons"'],
+        'Azeret':['"Azeret Mono"', ...defaultTheme.fontFamily.sans]
       },
       listStyleType: {
         square: 'square',

@@ -1,5 +1,5 @@
 // DatePicker
-const elem = document.querySelector('input[name="foo"]');
+const elem = document.querySelector('input[id="chooseDate"]');
 if(elem){
 const datepicker = new Datepicker(elem, {
   // ...options
@@ -24,7 +24,7 @@ if(swiperEl){
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
+    autoplay: true,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
