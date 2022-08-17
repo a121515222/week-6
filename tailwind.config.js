@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./app/**/*.{html,ejs}"],
+  content: ["./app/**/*.{html,ejs}", "./node_modules/flowbite/**/*.js" ],
   theme: {
     fontSize: {
       xs:['12px', {
@@ -92,6 +92,7 @@ module.exports = {
       padding: {
         '6.5': '26px',
         '13': '52px',
+        '15': '60px',
         '21': '84px',
       },
       fontFamily: {

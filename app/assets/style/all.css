@@ -175,29 +175,3 @@
   border-radius: 6px;
   transition:0.5s ;
  }
-
-/*.background {
-  position: relative;
-  z-index:20;
-}
-.background::befroe{
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: '';
-  height: 100%;
-  width: 100vw;
-  background: black;
-  z-index:10;
- }
- .background::after{
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  height: 100%;
-  width: 100vw;
-  background: black;
-  z-index:10;
- }
-*/
