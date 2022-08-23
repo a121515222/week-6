@@ -4,12 +4,12 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="h-1/2screen px-3 bg-[url('../images/bg_home_mobile.jpg')] bg-cover md:h-screen md:px-0
+<div class="h-1/2screen px-3 bg-[url('../images/bg_home_mobile.jpg')] bg-cover md:h-[534px] md:px-0
   md:bg-[url('../images/bg_home.jpg')] md:bg-contain flex justify-center items-center">
-  <div class="text-white text-center border border-white py-8 px-6 lg:px-20 lg:py-14 relative 
+  <div class="bg-black  text-white text-center border border-white py-8 px-6 lg:px-20 lg:py-14 relative 
   before:h-2.5 before:w-2.5 before:bg-white before:absolute before:top-0 before:left-0 before:-translate-x-1/2 before:-translate-y-1/2
   after:h-2.5 after:w-2.5 after:bg-white after:absolute after:top-full after:left-0 after:-translate-x-1/2 after:-translate-y-1/2
-  ">
+  " data-aos="fade-up">
     <h1
       class="text-2xl font-bold md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-primary-blue to-primary-green">
       全台最豐富的程式家教</h1>
@@ -21,8 +21,8 @@ current: index
 </div>
 <div class="bg-darkGary py-10 md:py-20">
   <div class="container">
-    <div class="grid grid-cols-12 gap-6">
-      <div class="pt-10 col-start-1 col-end-13 text-center md:col-end-4 md:text-left md:pt-21">
+    <div class="grid grid-cols-12 gap-6" data-aos="fade-up">
+      <div class="self-center col-span-12 text-center md:col-start-1 md:col-end-4 md:text-left">
         <h2 class="text-white font-bold text-2xl lg:text-3xl lg:leading-[35px]">手把手帶你<br>親自到家教到會</h2>
         <span class="inline-block h-3px w-50px bg-primary-green"></span>
       </div>
@@ -30,11 +30,11 @@ current: index
         <li
           class="col-span-3 rounded-lg mg:col-span-2 xl:col-span-1 hover:bg-secondary-dark hover:ring-1 ring-primary-green text-center group pt-13 pb-12">
           <span
-            class="material-symbols-outlined inline-block text-transparent bg-clip-text bg-split-green-blue md:text-secondary md:group-hover:text-transparent text-5xl">
+            class="material-symbols-outlined inline-block text-transparent bg-clip-text bg-blur-vertical-green-blue md:text-secondary md:group-hover:text-transparent text-5xl">
             chevron_left
           </span>
           <span
-            class="material-symbols-outlined inline-block text-transparent bg-clip-text bg-split-green-blue md:text-secondary md:group-hover:text-transparent text-5xl">
+            class="material-symbols-outlined inline-block text-transparent bg-clip-text bg-blur-vertical-green-blue md:text-secondary md:group-hover:text-transparent text-5xl">
             chevron_right
           </span>
           <br>
@@ -44,7 +44,7 @@ current: index
         <li
           class="col-span-3 rounded-lg mg:col-span-2 xl:col-span-1 hover:bg-secondary-dark hover:ring-1 ring-primary-green text-center group pt-13 pb-12">
           <span
-            class="material-symbols-outlined inline-block text-transparent bg-clip-text bg-split-green-blue md:text-secondary md:group-hover:text-transparent text-5xl">
+            class="material-symbols-outlined inline-block text-transparent bg-clip-text bg-blur-vertical-green-blue md:text-secondary md:group-hover:text-transparent text-5xl">
             rocket_launch
           </span>
           <br>
@@ -54,7 +54,7 @@ current: index
         <li
           class="col-span-3 rounded-lg mg:col-span-2 xl:col-span-1 hover:bg-secondary-dark hover:ring-1 ring-primary-green text-center group pt-13 pb-12">
           <span
-            class="material-symbols-outlined inline-block text-transparent bg-clip-text bg-split-green-blue md:text-secondary md:group-hover:text-transparent text-5xl">
+            class="material-symbols-outlined inline-block text-transparent bg-clip-text bg-blur-vertical-green-blue md:text-secondary md:group-hover:text-transparent text-5xl">
             location_on
           </span>
           <br>
@@ -66,45 +66,45 @@ current: index
   </div>
 </div>
 <div class="bg-secondary-dark">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <h2 class="text-center text-white font-bold text-22px md:text-3xl pt-10">預期上課流程</h2>
     <div class="text-center">
       <span class="inline-block h-3px w-50px bg-primary-green"></span>
     </div>
     <ul class="grid grid-cols-12 gap-6 py-10">
-      <li class="col-span-12 md:col-span-6  xl:col-span-3 text-white ring-1 ring-primary-green rounded-lg p-12 relative
+      <li class="col-span-12 md:col-span-6  xl:col-span-3 text-white ring-1 ring-white rounded-lg p-12 relative
       before:absolute before:top-0 before:-translate-y-1/2 before:left-12 before:content-['01'] before:font-bold before:font-Azeret
       before:bg-secondary-dark before:text-5xl before:text-primary-green">
-        <h2 class="text-2xl pb-4 font-bold">預約</h2>
+        <h3 class="text-2xl pb-4 font-bold">預約</h3>
         <p class="text-lg">線上預約指定課程與老師<br>由老師安排專屬課程</p>
       </li>
-      <li class="col-span-12 md:col-span-6  xl:col-span-3 text-white ring-1 ring-primary-green rounded-lg p-12 relative
+      <li class="col-span-12 md:col-span-6  xl:col-span-3 text-white ring-1 ring-white rounded-lg p-12 relative
       before:absolute before:top-0 before:-translate-y-1/2 before:left-12 before:content-['02'] before:font-bold before:font-Azeret
       before:bg-secondary-dark before:text-5xl before:text-primary-green">
-        <h2 class="text-2xl pb-4 font-bold">付款</h2>
+        <h3 class="text-2xl pb-4 font-bold">付款</h3>
         <p class="text-lg">支援各種支付方式<br>提供12期分期付款</p>
       </li>
-      <li class="col-span-12 md:col-span-6  xl:col-span-3 text-white ring-1 ring-primary-green rounded-lg p-12 relative
+      <li class="col-span-12 md:col-span-6  xl:col-span-3 text-white ring-1 ring-white rounded-lg p-12 relative
       before:absolute before:top-0 before:-translate-y-1/2 before:left-12 before:content-['03'] before:font-bold before:font-Azeret
       before:bg-secondary-dark before:text-5xl before:text-primary-green">
-        <h2 class="text-2xl pb-4 font-bold">上課</h2>
+        <h3 class="text-2xl pb-4 font-bold">上課</h3>
         <p class="text-lg">地點由您指定<br>密集性一對一教學</p>
       </li>
-      <li class="col-span-12 md:col-span-6  xl:col-span-3 text-white ring-1 ring-primary-green rounded-lg p-12 relative
+      <li class="col-span-12 md:col-span-6  xl:col-span-3 text-white ring-1 ring-white rounded-lg p-12 relative
       before:absolute before:top-0 before:-translate-y-1/2 before:left-12 before:content-['04'] before:font-bold before:font-Azeret
       before:bg-secondary-dark before:text-5xl before:text-primary-green">
-        <h2 class="text-2xl pb-4 font-bold">提供滿意度</h2>
+        <h3 class="text-2xl pb-4 font-bold">提供滿意度</h3>
         <p class="text-lg">提供課程滿意度及回饋<br>讓我們持續成長與進步</p>
       </li>
     </ul>
   </div>
 </div>
 <div class="bg-darkGary pt-10 md:pt-20">
-  <div class="text-center text-white">
+  <div class="text-center text-white" data-aos="fade-up">
     <h2 class=" font-bold text-22px md:text-3xl pt-10">你想要學習的程式，都在這裡</h2>
     <span class="inline-block h-3px w-50px bg-primary-green"></span>
   </div>
-  <div class="flex gap-4 overflow-x-scroll xScrollBar px-3 pt-6.5 pb-10 md:pb-20 md:pt-12">
+  <div class="flex gap-4 overflow-x-scroll xScrollBar px-3 pt-6.5 pb-10 md:pb-20 md:pt-12" data-aos="fade-up">
     <button class="btn bg-darkGary text-white md:text-lg border border-white rounded-lg">
       JavaScript
     </button>
@@ -142,11 +142,11 @@ current: index
 </div>
 <div class="bg-secondary-dark">
   <div class="container">
-    <div class="text-center text-white">
+    <div class="text-center text-white" data-aos="fade-up">
       <h2 class=" font-bold text-22px md:text-3xl pt-10">熱門課程推薦</h2>
       <span class="inline-block h-3px w-50px bg-primary-green"></span>
     </div>
-    <ul class="grid grid-cols-12 gap-6 py-12">
+    <ul class="grid grid-cols-12 gap-6 py-12" data-aos="fade-up">
       <li class="flex flex-col justify-between bg-darkGary text-white rounded-lg ring ring-secondary-dark 
       hover:ring-primary-green pt-6 pb-4 col-span-12 md:col-span-6  xl:col-span-3">
         <div class="from-group px-8">
@@ -228,16 +228,16 @@ current: index
         </div>
       </li>
     </ul>
-    <div class="flex justify-center py-10 md:py-20">
+    <div class="flex justify-center py-10 md:py-20" data-aos="fade-up">
       <button type="button" class="btn bg-gradient-to-r from-primary-green to-primary-blue text-white text-lg py-2 px-8
       rounded-lg">所有課程列表</button>
     </div>
   </div>
 </div>
 <div class="bg-darkGary">
-  <ul class="flex flex-wrap">
-    <li class="w-full md:w-1/2 xl:w-1/4 h-1/3screen lg:h-4/5screen bg-cover bg-[url('../images/info01.jpg')] text-white flex flex-col items-center justify-center
-    hover:opacity-100 opacity-70 transition-all duration-500 text-center xl:items-start group px-12">
+  <ul class="flex flex-wrap" data-aos="fade-up">
+    <li class="w-full md:w-1/2 xl:w-1/4 h-2/5screen lg:h-4/5screen bg-cover bg-[url('../images/info01.jpg')] text-white flex flex-col items-center justify-center
+    hover:opacity-100 opacity-70 transition-all duration-500 text-center xl:items-start group px-12 py-10">
       <span class="material-symbols-outlined text-primary-green xl:text-white group-hover:text-primary-green transition-all
       duration-500">
         forum
@@ -246,8 +246,8 @@ current: index
       <span class="inline-block h-3px w-50px bg-primary-green mb-8 xl:bg-white group-hover:bg-primary-green"></span>
       <p>除了可以瘋狂提問之外<br>還有機會一起完成專案</p>
     </li>
-    <li class="w-full md:w-1/2 xl:w-1/4 h-1/3screen lg:h-4/5screen bg-cover bg-[url('../images/info02.jpg')] text-white flex flex-col items-center justify-center
-    hover:opacity-100 opacity-70 transition-all duration-500 text-center xl:items-start group px-12">
+    <li class="w-full md:w-1/2 xl:w-1/4 h-2/5screen lg:h-4/5screen bg-cover bg-[url('../images/info02.jpg')] text-white flex flex-col items-center justify-center
+    hover:opacity-100 opacity-70 transition-all duration-500 text-center xl:items-start group px-12 py-10">
       <span class="material-symbols-outlined text-primary-green xl:text-white group-hover:text-primary-green transition-all
       duration-500">
         tips_and_updates
@@ -256,8 +256,8 @@ current: index
       <span class="inline-block h-3px w-50px bg-primary-green mb-8 xl:bg-white group-hover:bg-primary-green"></span>
       <p>進度制課程安排&個人化學習建議<br>有效管理你的學習動力</p>
     </li>
-    <li class="w-full md:w-1/2 xl:w-1/4 h-1/3screen lg:h-4/5screen bg-cover bg-[url('../images/info03.jpg')] text-white flex flex-col items-center justify-center
-    hover:opacity-100 opacity-70 transition-all duration-500 text-center xl:items-start group px-12">
+    <li class="w-full md:w-1/2 xl:w-1/4 h-2/5screen lg:h-4/5screen bg-cover bg-[url('../images/info03.jpg')] text-white flex flex-col items-center justify-center
+    hover:opacity-100 opacity-70 transition-all duration-500 text-center xl:items-start group px-12 py-10">
       <span class="material-symbols-outlined text-primary-green xl:text-white group-hover:text-primary-green transition-all
       duration-500">
         thumb_up
@@ -266,8 +266,8 @@ current: index
       <span class="inline-block h-3px w-50px bg-primary-green mb-8 xl:bg-white group-hover:bg-primary-green"></span>
       <p>針對學員狀況調整內容與步調<br>學習精準最有效</p>
     </li>
-    <li class="w-full md:w-1/2 xl:w-1/4 h-1/3screen lg:h-4/5screen bg-cover bg-[url('../images/info04.jpg')] text-white flex flex-col items-center justify-center
-    hover:opacity-100 opacity-70 transition-all duration-500 text-center xl:items-start group px-12">
+    <li class="w-full md:w-1/2 xl:w-1/4 h-2/5screen lg:h-4/5screen bg-cover bg-[url('../images/info04.jpg')] text-white flex flex-col items-center justify-center
+    hover:opacity-100 opacity-70 transition-all duration-500 text-center xl:items-start group px-12 py-10">
       <span class="material-symbols-outlined text-primary-green xl:text-white group-hover:text-primary-green transition-all
       duration-500">
         group
@@ -279,7 +279,7 @@ current: index
   </ul>
 </div>
 <div class="bg-secondary-dark pb-10 lg:pb-20">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <h2 class="text-white font-bold text-22px md:text-3xl pt-10 text-center">文章分享</h2>
     <div class="text-center">
       <span class="inline-block h-3px w-50px bg-primary-green"></span>
@@ -288,7 +288,7 @@ current: index
       <li class="rounded-lg p-8 flex flex-col justify-between w-full gap-y-4 lg:w-[31.6%] xl:w-[32.05%] relative group">
         <div class="from-group">
           <img src="./assets/images/article01.jpg" alt="article picture">
-          <h2 class="text-white font-bold pt-4">2022 前端開發者學習地圖</h2>
+          <h3 class="text-white font-bold pt-4">2022 前端開發者學習地圖</h3>
         </div>
         <div class="from-group">
           <p class="text-white">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
@@ -311,7 +311,7 @@ current: index
       <li class="rounded-lg p-8 flex flex-col justify-between w-full gap-y-4 lg:w-[31.6%] xl:w-[32.05%] relative group">
         <div class="from-group">
           <img src="./assets/images/article02.jpg" alt="article picture">
-          <h2 class="text-white font-bold pt-4">軟體工程師有哪些類別</h2>
+          <h3 class="text-white font-bold pt-4">軟體工程師有哪些類別</h3>
         </div>
         <div class="from-group">
           <p class="text-white">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
@@ -334,7 +334,7 @@ current: index
       <li class="rounded-lg p-8 flex flex-col justify-between w-full gap-y-4 lg:w-[31.6%] xl:w-[32.05%] relative group">
         <div class="from-group">
           <img src="./assets/images/article03.jpg" alt="article picture">
-          <h2 class="text-white font-bold pt-4">免費 25 小時前端教學資源</h2>
+          <h3 class="text-white font-bold pt-4">免費 25 小時前端教學資源</h3>
         </div>
         <div class="from-group">
           <p class="text-white">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
@@ -357,13 +357,14 @@ current: index
     </ul>
   </div>
 </div>
-<div class="bg-[url('../images/bg_share.jpg')] bg-cover h-screen">
-  <div class="container py-10 lg:py-20">
+<div class="bg-[url('../images/bg_share.jpg')] bg-cover lg:h-screen">
+  <div class="container py-10 lg:py-20" data-aos="fade-up">
     <div class="flex justify-center items-center">
-      <h2 class="text-lg lg:text-3xl text-center  font-bold text-white w-2/5 lg:w-full">專屬你的學習課程<br> 超過 3000 位學員得到了程式超能力
+      <h2 class="text-lg lg:text-3xl text-center font-bold  text-white w-3/5 lg:w-full">
+        專屬你的學習課程<br> 超過 3000 位學員得到了程式超能力
       </h2>
     </div>
-    <div class="text-center pb-6 lg:pb-0">
+    <div class="text-center lg:pb-0">
       <span class="inline-block h-3px w-50px bg-primary-green"></span>
     </div>
     <!-- Slider main container -->
@@ -371,61 +372,61 @@ current: index
       <!-- Additional required wrapper -->
       <ul class="swiper-wrapper">
         <!-- Slides -->
-        <li class="swiper-slide w-full h-full pb-10 flex flex-col justify-between lg:block lg:relative">
-          <div class="w-full h-[47.7%] mx-0.5 rounded-lg lg:absolute relative lg:bottom-[10%] lg:w-3/5 lg:h-[75%] lg:left-0 border border-white">
+        <li class="swiper-slide w-full h-auto pt-6 pb-10 lg:pt-0 flex flex-col justify-between gap-10 lg:block lg:relative">
+          <div class="w-full h-[213px] rounded-lg lg:absolute relative lg:bottom-[10%] lg:w-3/5 lg:h-3/4 lg:left-0 border border-white">
             <img src="./assets/images/share.jpg" alt="share picture" class="block rounded-lg object-cover absolute w-full h-full
-            lg:bottom-2 left-2">
+            bottom-0.5 lg:bottom-2 left-0.5 lg:left-2 ">
           </div>
-          <div class="rounded-t-lg rounded-br-lg relative bg-white py-6 px-7 h-[40%]
+          <div class="rounded-t-lg rounded-br-lg relative bg-white py-6 px-7 h-auto
           lg:absolute lg:right-0 lg:bottom-0 lg:w-9/20 lg:z-20">
             <img src="./assets/images/student01.jpg" alt="person picture"
               class="absolute top-0 right-6 -translate-y-1/2 rounded-full h-20 w-20 lg:h-25 lg:w-25">
-            <h2 class="font-bold pb-4">老師很有耐心</h2>
+            <h3 class="font-bold pb-4">老師很有耐心</h3>
             <p>老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
           </div>
         </li>
-        <li class="swiper-slide w-full h-full pb-10 flex flex-col justify-between lg:block lg:relative">
-          <div class="w-full h-[47.7%] mx-0.5 rounded-lg lg:absolute relative lg:bottom-[10%] lg:w-3/5 lg:h-[75%] lg:left-0 border border-white">
+        <li class=" swiper-slide w-full h-auto pt-6 lg:pt-0 pb-10 flex flex-col justify-between gap-10 lg:block lg:relative">
+          <div class="w-full h-[213px] rounded-lg lg:absolute relative lg:bottom-[10%] lg:w-3/5 lg:h-3/4 lg:left-0 border border-white">
             <img src="./assets/images/share2.jpg" alt="share picture" class="block rounded-lg object-cover absolute w-full h-full
-            lg:bottom-2 left-2">
+            bottom-[5px] lg:bottom-2 left-[5px] lg:left-2 ">
           </div>
-          <div class="rounded-t-lg rounded-br-lg relative bg-white py-6 px-7 h-[40%]
+          <div class="rounded-t-lg rounded-br-lg relative bg-white py-6 px-7 h-auto
           lg:absolute lg:right-0 lg:bottom-0 lg:w-9/20 lg:z-20">
             <img src="./assets/images/student02.jpg" alt="person picture"
               class="absolute top-0 right-6 -translate-y-1/2 rounded-full h-20 w-20 lg:h-25 lg:w-25">
-            <h2 class="font-bold pb-4">老師很有耐心</h2>
+            <h3 class="font-bold pb-4">老師很有耐心</h3>
             <p>老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
           </div>
         </li>
-        <li class="swiper-slide w-full h-full pb-10 flex flex-col justify-between lg:block lg:relative">
-          <div class="w-full h-[47.7%] mx-0.5 rounded-lg lg:absolute relative lg:bottom-[10%] lg:w-3/5 lg:h-[75%] lg:left-0 border border-white">
+        <li class=" swiper-slide w-full h-auto pt-6 lg:pt-0 pb-10 flex flex-col justify-between gap-10 lg:block lg:relative">
+          <div class="w-full h-[213px] rounded-lg lg:absolute relative lg:bottom-[10%] lg:w-3/5 lg:h-3/4 lg:left-0 border border-white">
             <img src="./assets/images/share3.jpg" alt="share picture" class="block rounded-lg object-cover absolute w-full h-full
-            lg:bottom-2 left-2">
+            bottom-[5px] lg:bottom-2 left-[5px] lg:left-2 ">
           </div>
-          <div class="rounded-t-lg rounded-br-lg relative bg-white py-6 px-7 h-[40%]
+          <div class="rounded-t-lg rounded-br-lg relative bg-white py-6 px-7 h-auto
           lg:absolute lg:right-0 lg:bottom-0 lg:w-9/20 lg:z-20">
             <img src="./assets/images/student03.jpg" alt="person picture"
               class="absolute top-0 right-6 -translate-y-1/2 rounded-full h-20 w-20 lg:h-25 lg:w-25">
-            <h2 class="font-bold pb-4">老師很有耐心</h2>
+            <h3 class="font-bold pb-4">老師很有耐心</h3>
             <p>老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
           </div>
         </li>
-        <li class="swiper-slide w-full h-full pb-10 flex flex-col justify-between lg:block lg:relative">
-          <div class="w-full h-[47.7%] mx-0.5 rounded-lg lg:absolute relative lg:bottom-[10%] lg:w-3/5 lg:h-[75%] lg:left-0 border border-white">
+        <li class=" swiper-slide w-full h-auto pt-6 lg:pt-0 pb-10 flex flex-col justify-between gap-10 lg:block lg:relative">
+          <div class="w-full h-[213px] rounded-lg lg:absolute relative lg:bottom-[10%] lg:w-3/5 lg:h-3/4 lg:left-0 border border-white">
             <img src="./assets/images/share4.jpg" alt="share picture" class="block rounded-lg object-cover absolute w-full h-full
-            lg:bottom-2 left-2">
+            bottom-[5px] lg:bottom-2 left-[5px] lg:left-2 ">
           </div>
-          <div class="rounded-t-lg rounded-br-lg relative bg-white py-6 px-7 h-[40%]
+          <div class="rounded-t-lg rounded-br-lg relative bg-white py-6 px-7 h-auto
           lg:absolute lg:right-0 lg:bottom-0 lg:w-9/20 lg:z-20">
             <img src="./assets/images/student04.jpg" alt="person picture"
               class="absolute top-0 right-6 -translate-y-1/2 rounded-full h-20 w-20 lg:h-25 lg:w-25">
-            <h2 class="font-bold pb-4">老師很有耐心</h2>
+            <h3 class="font-bold pb-4">老師很有耐心</h3>
             <p>老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
           </div>
         </li>
       </ul>
       <!-- If we need pagination -->
-      <div class="swiper-pagination bg-black"></div>
+      <div class="swiper-pagination"></div>
       <!-- If we need navigation buttons -->
       <div class="swiper-button-prev after:content-['\e5c4'] after:font-google-material after:text-primary-green"></div>
       <div class="swiper-button-next after:content-['\e5c8'] after:font-google-material after:text-primary-green"></div>
@@ -433,7 +434,7 @@ current: index
   </div>
 </div>
 <div class="bg-black py-10 md:py-20">
-  <div class="container flex justify-center">
+  <div class="container flex justify-center" data-aos="fade-up">
     <div
       class=" w-full md:w-4/5 bg-secondary-dark rounded-lg flex flex-col justify-center md:justify-between md:flex-row
       items-center gap-6 py-10 px-6 md:p-12 ">

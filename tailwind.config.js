@@ -71,6 +71,7 @@ module.exports = {
       backgroundImage: {
         'split-green-blue': "linear-gradient(to right, #62DB54 50% , #09ACF5 50%);",
         'blur-green-blue': "linear-gradient(to right, #62DB54 , #09ACF5);",
+        'blur-vertical-green-blue': "linear-gradient(to bottom, #62DB54 , #09ACF5);",
       },
       boxShadow: {
         'hamburger': '0 10px #62DB54',
@@ -78,6 +79,7 @@ module.exports = {
       },
       height: {
         '1/3screen': '33vh',
+        '2/5screen': '40vh',
         '1/2screen': '50vh',
         '2/3screen': '66vh',
         '7/10screen': '70vh',

@@ -17,21 +17,28 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
 
-  <div class="bg-darkGary text-white py-6">
-    <div class="container flex justify-between relative">
-    <a class="hidden md:flex items-center " href="index.html"><img class=" h-[42px] " src="./assets/images/logo.svg" alt="logo"></a>
-    <a class="md:hidden flex items-center " href="index.html"><img class="h-6 w-6 " src="./assets/images/logo2.svg" alt="logo"></a>
+  <div class="bg-darkGary text-white py-[9px]">
+    <div class="container flex justify-between relative items-center" data-aos="fade-up">
+    <a class=" h-6 w-6 md:w-[174px] md:h-[42px] bg-[url('../images/logo2.svg')] md:bg-[url('../images/logo.svg')] bg-cover overflow-hidden whitespace-normal indent-[101%]" href="index.html">home</a>
     <ul class="js-nav bg-darkGary flex flex-col gap-6 sm:flex-row items-center justify-between px-3 w-full transition-all duration-500 absolute top-[-280%] left-0 py-6 md:gap-x-12 md:static md:w-auto md:px-0">
-      <li class="hover:bg-blur-green-blue hover:text-transparent hover:bg-clip-text"><a href="index.html">首頁</a></li>
-      <li class="hover:bg-blur-green-blue hover:text-transparent hover:bg-clip-text"><a href="courses.html">課程介紹</a></li>
-      <li class="hover:bg-blur-green-blue hover:text-transparent hover:bg-clip-text "><a class="flex items-center" href="#"><span class="material-symbols-outlined">
+      <li class="hover:bg-blur-green-blue hover:text-transparent hover:bg-clip-text">
+        <a href="index.html">首頁</a>
+      </li>
+      <li class="hover:bg-blur-green-blue hover:text-transparent hover:bg-clip-text">
+        <a href="courses.html">課程介紹</a>
+      </li>
+      <li class="hover:bg-blur-green-blue hover:text-transparent hover:bg-clip-text ">
+        <a class="flex items-center" href="#" data-modal-toggle="authentication-modal">
+          <span class="material-symbols-outlined">
         account_circle
-        </span>登入</a></li>
+        </span>登入</a>
+      </li>
     </ul>
     <div class="hamburger h-[60px] w-[60px] relative cursor-pointer flex justify-end items-center z-100 md:hidden
         before:absolute before:w-8 before:h-0.5 before:bg-primary-green before:-translate-y-2.5 before:transition-all before:duration-500 before:shadow-hamburger
@@ -50,9 +57,64 @@
   <div class="bg-darkGary-middle py-4 lg:py-6 stickyFooter">
     <p class="text-secondary text-xs text-center md:text-base">Coding Home © 2022 All Rights Reserved</p>
   </div>
+  <!-- login modal -->
+<div id="authentication-modal" tabindex="-1" aria-hidden="true"
+class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+<div class="relative p-4 w-full md:max-w-md lg:max-w-2xl h-full md:h-auto">
+  <!-- Modal content -->
+  <div class="relative  border border-white bg-secondary-dark">
+    <div class="py-10 md:py-6 px-6 md:px-12 lg:px-[150px]">
+      <h3 class="mb-4 text-xl font-medium text-white text-center">登入</h3>
+      <button type="button"
+        class="absolute top-6 right-2.5 text-white bg-transparent  hover:text-primary-blue rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+        data-modal-toggle="authentication-modal">
+        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <span class="sr-only">Close modal</span>
+      </button>
+      <form class="space-y-6 border-b border-white pb-9 md:pb-15 relative" action="#">
+        <div>
+          <label for="email" class="block mb-2 text-sm font-medium text-white">信箱</label>
+          <input type="email" name="email" id="email"
+            class="bg-black border border-white text-white text-sm focus:ring-primary-green focus:border-primary-green block w-full py-2 px-4"
+            placeholder="請輸入信箱" required>
+        </div>
+        <div>
+          <label for="password" class="block mb-2 text-sm font-medium text-white">密碼</label>
+          <input type="password" name="password" id="password" placeholder="請輸入密碼"
+            class="bg-black border border-white text-white text-sm focus:ring-primary-green focus:border-primary-green block w-full py-2 px-4"
+            required>
+        </div>
+
+        <a href="payProcess.html" class="w-full btn text-center text-white rounded-lg border border-darkGary bg-blur-green-blue py-2
+           px-4 md:px-12 whitespace-nowrap">登入
+        </a>
+        <span class="text-white !mt-0 bg-secondary-dark px-4 absolute top-full left-1/2 -translate-y-1/2 -translate-x-1/2">
+          其他登入方式
+        </span>
+      </form>
+      <button class="w-full btn text-white rounded-lg border border-white py-2  
+           px-4 md:px-12 whitespace-nowrap mt-6 relative">
+           <img class="h-6 w-6 absolute top-1/2 left-8 -translate-y-1/2 " src="./assets/images/icon_fb.svg" alt="Facebook icon">
+           <span>Facebook 登入</span>
+        </button>
+        <button type="button" class="w-full btn text-white rounded-lg border border-white py-2
+           px-4 md:px-12 whitespace-nowrap mt-6 relative">
+           <img class="h-6 w-6 absolute top-1/2 left-8 -translate-y-1/2 " src="./assets/images/icon_google.svg" alt="Google icon">
+           <span>Google 登入</span> 
+        </button>
+    </div>
+  </div>
+</div>
+</div>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/flowbite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

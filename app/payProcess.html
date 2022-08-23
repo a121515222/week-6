@@ -6,11 +6,11 @@ current: payment
 ---
 <div class="bg-darkGary">
   <div class="container grid grid-cols-12">
-    <div class="col-span-12 xl:col-start-3 xl:col-end-11">
-      <ul class=" flex justify-between text-white pt-8 pb-4 relative
+    <div class="col-span-12 xl:col-start-3 xl:col-end-11" >
+      <ol class=" flex justify-between text-white pt-8 pb-4 relative
     before:absolute before:top-8 before:left-8 before:-translate-y-1/2 before:bg-white before:h-0.5 before:w-[calc(50%-32px)] before:z-0
     after:absolute after:top-8 after:right-8 after:-translate-y-1/2 after:bg-white after:h-0.5 after:w-[calc(50%-32px)] after:z-0
-    ">
+    " data-aos="fade-up">
       <li class="relative text-primary pt-4">
         <span class="absolute left-1/2 top-0 -translate-y-1/2 -translate-x-1/2 z-20
         rounded-full flex justify-center items-center border border-white text-xs bg-primary-green text-white w-5 h-5  font-Azeret">
@@ -32,13 +32,13 @@ current: payment
       </span>
         付款成功
       </li>
-    </ul>
+    </ol>
     </div>
     
   </div>
 </div> 
 <div class="bg-black pb-[144px]">
-  <div class="container grid grid-cols-12 space-y-11 xl:relative">
+  <div class="container grid grid-cols-12 space-y-11 xl:relative" data-aos="fade-up">
     <div class="bg-darkGary col-span-12 xl:col-span-4 relative xl:left-[43px] xl:h-1/2 xl:top-1/2 xl:-translate-y-1/2 z-10">
       <div class="relative p-6 xl:py-12 xl:px-8 flex flex-col justify-center items-center">
         <img src="./assets/images/teacher01.jpg" alt="teacher picture" class="rounded-full w-25 h-25 ring ring-primary-green mb-4 xl:mb-6">
@@ -108,9 +108,9 @@ current: payment
             </div>
           </div>
           <div class="from-group">
-            <label class="block pb-2 xl:pb-1.5" for="text" class="block">上課地點</label>
+            <label class="block pb-2 xl:pb-1.5" for="location" class="block">上課地點</label>
             <input class="py-2 px-4 bg-secondary-dark w-full rounded border border-white focus:ring focus:ring-white" 
-            id="text" placeholder="請輸入上課地點" type="email">
+            id="location" placeholder="請輸入上課地點" type="text">
           </div>
           <div class="flex flex-col xl:flex-row xl:justify-between space-y-6 xl:space-y-0 pt-6">
             <span class="text-white text-lg font-bold font-Azeret">NT$1600</span>
