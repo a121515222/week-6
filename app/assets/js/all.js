@@ -2,7 +2,7 @@
 const elem = document.querySelector('input[id="chooseDate"]');
 if(elem){
 const datepicker = new Datepicker(elem, {
-  // ...options
+  language: 'zh-TW',
 });
 // const elem = document.getElementById('foo');
 // const rangepicker = new DateRangePicker(elem, {
