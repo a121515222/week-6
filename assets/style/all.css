@@ -2399,6 +2399,11 @@ input:checked + .toggle-bg {
   border-width: 12px 12px 0 12px;
   border-color: #2d2d2d transparent transparent transparent;
 }
+
+/*datepicker selected focused*/
+.selected,.focused{
+  background-color:var(--primary-green)!important;
+}
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;

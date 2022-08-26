@@ -4,7 +4,8 @@
 var elem = document.querySelector('input[id="chooseDate"]');
 
 if (elem) {
-  var datepicker = new Datepicker(elem, {// ...options
+  var datepicker = new Datepicker(elem, {
+    language: 'zh-TW'
   }); // const elem = document.getElementById('foo');
   // const rangepicker = new DateRangePicker(elem, {
   //   // ...options
